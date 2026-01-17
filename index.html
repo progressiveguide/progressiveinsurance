@@ -26,9 +26,10 @@
     .breadcrumbs a {color:#6b7280;}
     .ai-box {background:#f9fafb; border-left:4px solid #2563eb; padding:18px; margin:26px 0;}
     .toc a {display:block; margin:6px 0;}
-    .floating-cta {
+    /* ===== Floating CTA ===== */
+.floating-cta {
   position: fixed;
-  bottom: 24px;          
+  bottom: 24px;
   left: 16px;
   background: #2563eb;
   color: #fff;
@@ -38,21 +39,27 @@
   font-weight: 600;
   box-shadow: 0 6px 14px rgba(0,0,0,.18);
   z-index: 999;
-    }
-    body {
+}
+
+/* Page bottom space so CTA never overlaps content */
+body {
   padding-bottom: 90px;
-    }
-      @media (max-width: 768px) {
+}
+
+/* ===== MOBILE ONLY FIXES ===== */
+@media (max-width: 768px) {
+
+  /* CTA mobile position */
   .floating-cta {
     bottom: 20px;
     left: 12px;
   }
-    }
-  /* Tawk.to widget mobile position fix */
-@media (max-width: 768px) {
+
+  /* Tawk.to launcher fix */
   iframe[src*="tawk.to"] {
-    bottom: 90px !important;   
-    right: 16px !important;
+    right: 16px !important;   /* screen ke andar */
+    bottom: 80px !important;  /* CTA se upar */
+    max-width: calc(100vw - 32px);
   }
 }
   </style>
