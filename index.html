@@ -27,16 +27,28 @@
     .ai-box {background:#f9fafb; border-left:4px solid #2563eb; padding:18px; margin:26px 0;}
     .toc a {display:block; margin:6px 0;}
     .floating-cta {
-      position:fixed; bottom:72px; right:18px;
-      background:#2563eb; color:#fff;
-      padding:14px 18px; border-radius:999px;
-      font-weight:600; box-shadow:0 8px 24px rgba(0,0,0,.18);
-      z-index:999;
+  position: fixed;
+  bottom: 90px;          
+  left: 16px;            
+  right: auto;
+  background: #2563eb;
+  color: #fff;
+  padding: 8px 14px;     
+  border-radius: 999px;
+  font-size: 0.85rem;    
+  font-weight: 600;
+  box-shadow: 0 6px 16px rgba(0,0,0,.18);
+  z-index: 999;
+  width: auto;
+      @media (max-width: 768px) {
+  .floating-cta {
+    bottom: 110px;     
+    left: 12px;
+    font-size: 0.8rem;
+    padding: 7px 12px;
+      }
     }
-    .floating-cta:hover {background:#1e40af;}
-    @media(max-width:768px){
-      .floating-cta {left:18px; right:18px; text-align:center;}
-    }
+  
   </style>
 <script type="application/ld+json">
 {
