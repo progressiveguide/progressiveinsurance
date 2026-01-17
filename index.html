@@ -28,27 +28,33 @@
     .toc a {display:block; margin:6px 0;}
     .floating-cta {
   position: fixed;
-  bottom: 90px;          
-  left: 16px;            
-  right: auto;
+  bottom: 24px;          
+  left: 16px;
   background: #2563eb;
   color: #fff;
-  padding: 8px 14px;     
+  padding: 7px 12px;
   border-radius: 999px;
-  font-size: 0.85rem;    
+  font-size: 0.8rem;
   font-weight: 600;
-  box-shadow: 0 6px 16px rgba(0,0,0,.18);
+  box-shadow: 0 6px 14px rgba(0,0,0,.18);
   z-index: 999;
-  width: auto;
+    }
+    body {
+  padding-bottom: 90px;
+    }
       @media (max-width: 768px) {
   .floating-cta {
-    bottom: 110px;     
+    bottom: 20px;
     left: 12px;
-    font-size: 0.8rem;
-    padding: 7px 12px;
-      }
+  }
     }
-  
+  /* Tawk.to widget mobile position fix */
+@media (max-width: 768px) {
+  iframe[src*="tawk.to"] {
+    bottom: 90px !important;   
+    right: 16px !important;
+  }
+}
   </style>
 <script type="application/ld+json">
 {
